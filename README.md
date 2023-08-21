@@ -59,7 +59,7 @@ $ python promethe.py --help
 
 # Contribution
 
-Give a ⭐️ if you find pBay intriguing, share your insights, and let's keep the conversation alive. Contributions are
+Give a ⭐️ if you find this project intriguing, share your insights, and let's keep the conversation alive. Contributions are
 very welcome.
 
 ## You can help this project by Donating
