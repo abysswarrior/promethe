@@ -1,4 +1,5 @@
 import typer
+import requests
 
 from rich import print
 from nslookup import Nslookup
@@ -37,3 +38,17 @@ def nslookup(domain: Annotated[str, typer.Argument(help="domain like [green]exam
     print(" " + "[bright_red]+" * 35)
     for item, record in enumerate(ips_record.answer, 1):
         print(f" Address [{item}] : {record}")
+
+
+@app.command(rich_help_panel="Network Tools")
+def myip():
+    """
+    show your public ip
+    """
+    ip = requests.get("https://api.ipify.org")
+
+    # create output
+    print(" myip tools")
+    print(" " + "+" * 35)
+
+    print(f" Your Public IP : {ip.text}")
