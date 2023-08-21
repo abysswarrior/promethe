@@ -31,11 +31,11 @@ def nslookup(domain: Annotated[str, typer.Argument(help="domain like [green]exam
     ips_record = dns_query.dns_lookup(domain)
 
     # create output
-    print(" [bright_red]nslookup tools")
-    print(" " + "[bright_red]+" * 35)
+    print(" nslookup tools")
+    print(" " + "+" * 35)
 
     print(" Name        :", domain)
-    print(" " + "[bright_red]+" * 35)
+    print(" " + "+" * 35)
     for item, record in enumerate(ips_record.answer, 1):
         print(f" Address [{item}] : {record}")
 
