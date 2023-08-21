@@ -1,5 +1,6 @@
 import typer
 from rich import print
+from network import tools
 
 logo = """
    )
@@ -45,6 +46,8 @@ def info():
     print(
         f"[red] ●  [bold bright_green]:boom: NOTE[bright_green]: [grey66]to see a list of tools and commands type [white]--help\n\n")
 
+
+app.add_typer(tools.app, name="network", rich_help_panel="Network Tools")
 
 if __name__ == "__main__":
     show_logo()
