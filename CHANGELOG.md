@@ -1,7 +1,8 @@
-## Unreleased
+## 0.1.0 (2024-08-23)
 
 ### Feat
 
+- changelog added
 - cz config file added
 - **README**: add more info about project
 - add project screenshot
